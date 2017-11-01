@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {DataProvider} from "../../providers/data/data";
+import {NavController} from "ionic-angular";
 
 @Component({
   selector: 'page-home',
@@ -7,8 +8,14 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  lists: {};
+
+  constructor(public navCtrl:NavController, public dataService:DataProvider) {
 
   }
+  ionViewDidLoad() {
+    this.lists = this.dataService.myData;
+  };
 
 }
+
