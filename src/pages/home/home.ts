@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 import {Component} from '@angular/core';
 import {DataProvider} from "../../providers/data/data";
 import {NavController} from "ionic-angular";
 import {InfoPage} from "../info/info";
+=======
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+>>>>>>> parent of 43d05b3... Homework 4 Upload
 
 @Component({
   selector: 'page-home',
@@ -9,18 +14,12 @@ import {InfoPage} from "../info/info";
 })
 export class HomePage {
 
-  lists: {};
-
-  constructor(public navCtrl:NavController, public dataService:DataProvider) {
+  constructor(public navCtrl: NavController) {
 
   }
-  ionViewDidLoad() {
-    this.lists = this.dataService.myData;
-  };
 
   showItem(item):void {
     this.navCtrl.push(InfoPage, item);
   }
 
 }
-

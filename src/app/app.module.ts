@@ -6,8 +6,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+<<<<<<< HEAD
 import { InfoPage } from '../pages/info/info';
 import { DataProvider } from '../providers/data/data';
+=======
+>>>>>>> parent of 43d05b3... Homework 4 Upload
 
 @NgModule({
   declarations: [
@@ -28,8 +31,7 @@ import { DataProvider } from '../providers/data/data';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
