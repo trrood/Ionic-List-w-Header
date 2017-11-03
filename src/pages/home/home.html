@@ -11,9 +11,9 @@
     <ion-list-header>
       {{list.ListTitle}}
     </ion-list-header>
-    <ion-item *ngFor="let item of list.ListItems">
-      {{item.itemName}}
-    </ion-item>
+    <button ion-item *ngFor="let item of list.ListItems" (click)="showItem(item)">
+      {{item.name}}
+    </button>
   </ion-list>
 
 </ion-content>

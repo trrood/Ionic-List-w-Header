@@ -12,11 +12,43 @@ export class DataProvider {
 
   myData = [
     {
-      ListTitle: "Meat",
+      ListTitle: "Snacks",
       ListItems: [
-        {itemName: "Chicken"},
-        {itemName: "Pork"},
-        {itemName: "Beef"}
+        {
+          name: "Popcorn",
+          cost: "$4.89",
+          unit: "box"
+        },
+        {
+          name: "Chips",
+          cost: "$3.19",
+          unit: "bag"
+        },
+        {
+          name: "Cookies",
+          cost: "$2.89",
+          unit: "box"
+        }
+      ]
+    },
+    {
+      ListTitle: "Drinks",
+      ListItems: [
+        {
+          name: "Juice",
+          cost: "$3.49",
+          unit: "gallon"
+        },
+        {
+          name: "Coffee",
+          cost: "$5.99",
+          unit: "lb"
+        },
+        {
+          name: "Water",
+          cost: "$9.99",
+          unit: "24 pack"
+        }
       ]
     }
   ];
